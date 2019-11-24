@@ -1,8 +1,4 @@
 package ru.spbstu.telematics.java;
-
-
-
-
 import org.junit.Test;
 import java.io.File;
 import java.io.IOException;
@@ -10,8 +6,8 @@ import java.io.IOException;
 
 public class MVTests {
 
-	@Test
-    public void Test1() throws IOException {
+   @Test
+   public void Test1() throws IOException {
         File f1 = new File("testFile.txt");
         f1.createNewFile();
         MV.main(new String[] {f1.getPath(), "renamedTestFile.txt"});
