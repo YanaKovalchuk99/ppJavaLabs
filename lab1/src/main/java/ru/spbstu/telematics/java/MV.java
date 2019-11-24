@@ -4,14 +4,13 @@ import java.io.IOError;
 
 public class MV {
 
-	public static void main(String[] args)
+public static void main(String[] args)
     {
-		if(args.length == 0)
-			System.out.println("Ошибка! Нет аргументов!");
-		else {
+	if(args.length == 0)
+		System.out.println("Ошибка! Нет аргументов!");
+	else {
 			
         String destString = args[args.length - 1];
-
         File destFile = new File(destString);
         if (!destFile.isDirectory() && args.length > 2)
         {
