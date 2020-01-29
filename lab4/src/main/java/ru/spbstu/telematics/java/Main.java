@@ -10,8 +10,9 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
         int size = 1000;
-        int[][] first = createMatrix(size, size);
-        int[][] second = createMatrix(size, size);
+        int size1 = 1000;
+        int[][] first = createMatrix(size, size1);
+        int[][] second = createMatrix(size1, size);
 
         long before = System.currentTimeMillis();
         matrixService.multiply(first, second);
